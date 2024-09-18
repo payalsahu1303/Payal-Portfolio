@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@300;400&display=swap');
+
+:root {
+  --font-base: Outfit, sans-serif;
+
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #24437a;
+  --brown-color: #342a36;
+  --white-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}

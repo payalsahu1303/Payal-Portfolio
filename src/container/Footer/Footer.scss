@@ -1,0 +1,123 @@
+.app__footer {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.app__footer-cards {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4em 2rem 2rem;
+
+  .app__footer-card {
+    min-width: 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fef4f5;
+    transition: all 0.3s ease-in-out;
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin: 0 0.7rem;
+    }
+
+    p, a {
+      font-weight: 500;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    &:hover {
+      box-shadow: 0 0 25px #fef4f5;
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.app__footer-cards .app__footer-card:last-child {
+  background-color: #f2f7fb;
+}
+
+.app__footer-cards .app__footer-card:last-child:hover {
+  box-shadow: 0 0 25px #f2f7fb;
+}
+
+.app__footer-form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+
+  
+
+  input, textarea {
+    width: 100%;
+    padding: 0.95rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 7px;
+    background-color: white;
+    font-family: var(--font-base);
+    color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.01);
+  }
+
+  textarea {
+    height: 170px;
+  }
+
+  .submit-text { /* Retain this class for the submit button */
+    width: 20%;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #38537f;
+    font-weight: 500;
+    color: var(--white-color);
+    outline: none;
+    margin: 2rem 0 0 0;
+    font-family: var(--font-base);
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    cursor: pointer;
+
+    &:hover {
+      background-color: #5f718f;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 1rem;
+      width: 30%;
+    
+    }
+  
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 1rem 1rem;
+  }
+}
